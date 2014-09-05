@@ -5,6 +5,8 @@ Nebula is a Meteor boilerplate designed to help you get started making Meteor we
 
 Shout out to two other excellent boilerplates: [meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate) and [Void](https://github.com/SachaG/Void).
 
+Preview the boilerplate here: http://nebula-boilerplate.meteor.com/
+
 
 ##Features
 - Uses Bootstrap3
