@@ -7,6 +7,7 @@ Shout out to two other excellent boilerplates: [meteor-boilerplate](https://gith
 
 
 ##Features
+- Uses Bootstrap3
 - Recommended directory structure
 - Models with inheritance and validation
 - Included packages like Iron-Router, Collection2, Bootstrap3-less, and npm, give you all the essentials
