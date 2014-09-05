@@ -82,6 +82,11 @@ packages.json           # Add desired NPM packages here, load with Meteor.npmReq
 - Testing with https://github.com/meteor-velocity/velocity
 - Server console with https://github.com/gandev/meteor-server-console
 
+##Helpful Resources
+- [Discover Meteor](https://www.discovermeteor.com/)
+- [Meteor Cookbook](https://github.com/awatson1978/meteor-cookbook/blob/master/readme.md)
+- [Crater.io - Hacker News for Meteor](http://crater.io/)
+
 
 ##Todo
 - Tests with https://github.com/meteor-velocity/velocity when they update to 0.9
