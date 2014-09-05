@@ -23,7 +23,38 @@ The router comes preconfigured with:
 - Not found template
 - Update the page title when changing routes
 
+##Directory Structure
+This directory structure allows for clean, modular code:
+ 
+```
+client/                 # Client folder
+    compatibility/      # Third-party libraries that create a global variable, or need to be loaded first
+    config/             # Client-side configuration files
+    helpers/            # Template helpers
+    less                # LESS files    
+    lib/                # Client-side library files that get executed first
+    modules/            # Re-usable components and partials
+    routes/             # Iron-Router routes
+    startup/            # Client-side startup code
+    subscriptions/      # Global subscriptions for the client
+    views/              # Views/templates for your application
+        common/         # General purpose templates (header, footer, etc.)
+models/                 # Model files, with Collection, Schema and publish definitions
+    lib/                # Models loaded first
+private/                # Private files
+public/                 # Public files
+server/                 # Server-only files
+    fixtures/           # Database fixtures
+    lib/                # Server-side library files that get executed first
+    methods/			 # Meteor.methods definitions
+    startup/            # On server startup
+tests/                  # Velocity test files, can be run with mocha(*)
+packages.json           # Add desired NPM packages here, load with Meteor.npmRequire
+```
+
+
 ##Installation
+- Install [Meteor](https://www.meteor.com/)
 - Download the repository
 - Run `meteor` in the root directory
 
