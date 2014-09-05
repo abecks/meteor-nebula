@@ -8,6 +8,7 @@
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
+                <th width="20"></th>
             </tr>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@
             <tr>
                 <td>{{firstname}}</td>
                 <td>{{lastname}}</td>
+                <td><button class="delete" data-id="{{_id}}"><i class="glyphicon glyphicon-remove"></i></button></td>
             </tr>
             {{/each}}
         </tbody>

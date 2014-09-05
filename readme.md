@@ -46,7 +46,7 @@ public/                 # Public files
 server/                 # Server-only files
     fixtures/           # Database fixtures
     lib/                # Server-side library files that get executed first
-    methods/			 # Meteor.methods definitions
+    methods/            # Meteor.methods definitions
     startup/            # On server startup
 tests/                  # Velocity test files, can be run with mocha(*)
 packages.json           # Add desired NPM packages here, load with Meteor.npmRequire
