@@ -80,7 +80,8 @@ You will want to read the instructions for the following packages:
 
 - [Meteor Documentation](http://docs.meteor.com/)
 - [Iron Router - Basics](https://github.com/EventedMind/iron-router#basics)
-- [Collection2 - Attached a Schema to a Collection](https://github.com/EventedMind/iron-router#basics)
+- [Collection2 - Attaching a Schema to a Collection](https://github.com/EventedMind/iron-router#basics)
+- [Using NPM Modules in your app](http://docs.meteor.com/)
 
 
 ##Recommended Packages
