@@ -23,6 +23,23 @@ The router comes preconfigured with:
 - Not found template
 - Update the page title when changing routes
 
+##Packages
+- standard-app-packages
+- less
+- jquery
+- underscore
+- accounts-base
+- accounts-password
+- iron:router
+- meteorhacks:npm
+- npm-container
+- nemo64:bootstrap
+- mrt:underscore-string-latest
+- accounts-ui
+- aldeed:collection2
+- aldeed:autoform
+
+
 ##Directory Structure
 This directory structure allows for clean, modular code:
  

@@ -11,13 +11,10 @@ accounts-base
 accounts-password
 iron:router
 meteorhacks:npm
-
-
 npm-container
 nemo64:bootstrap
 mrt:underscore-string-latest
 accounts-ui
 aldeed:collection2
 aldeed:autoform
-mrt:server-eval
 
