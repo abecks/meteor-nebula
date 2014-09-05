@@ -1,0 +1,14 @@
+<template name="register">
+    <div class="form">
+        <h1>Register</h1>
+        <br>
+        {{#autoForm schema='app.schema.RegisterForm' id="registerForm"}}
+        {{> afQuickField name="email"}}
+        {{> afQuickField name="password" type='password'}}
+        <div>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+        </div>
+        {{/autoForm}}
+    </div>
+</template>

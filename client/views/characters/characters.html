@@ -1,0 +1,22 @@
+<template name="characters">
+    <h1>Characters Collection</h1>
+    <br>
+    <a class="btn btn-success btn-lg float-right" href="{{pathFor 'createCharacter'}}">Add New Character</a>
+    <br><br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each this}}
+            <tr>
+                <td>{{firstname}}</td>
+                <td>{{lastname}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</template>

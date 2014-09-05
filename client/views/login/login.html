@@ -1,0 +1,14 @@
+<template name="login">
+    <div class="form">
+        <h1>Login</h1>
+        <br>
+        {{#autoForm schema='app.schema.LoginForm' id="loginForm"}}
+            {{> afQuickField name="email"}}
+            {{> afQuickField name="password" type='password'}}
+            <div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="reset" class="btn btn-default">Reset</button>
+            </div>
+        {{/autoForm}}
+    </div>
+</template>
