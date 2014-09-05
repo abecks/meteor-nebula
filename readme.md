@@ -75,6 +75,13 @@ packages.json           # Add desired NPM packages here, load with Meteor.npmReq
 - Download the repository
 - Run `meteor` in the root directory
 
+##Getting Started
+You will want to read the instructions for the following packages:
+
+- [Meteor Documentation](http://docs.meteor.com/)
+- [Iron Router - Basics](https://github.com/EventedMind/iron-router#basics)
+- [Collection2 - Attached a Schema to a Collection](https://github.com/EventedMind/iron-router#basics)
+
 
 ##Recommended Packages
 - Pagination with https://github.com/alethes/meteor-pages
