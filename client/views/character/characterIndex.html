@@ -1,0 +1,32 @@
+<template name="characterIndex">
+    <h1>Characters Collection</h1>
+    <br>
+    <a class="btn btn-success btn-lg float-right" href="{{pathFor 'characterCreate'}}">Add New Character</a>
+    <br><br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th width="200">ID</th>
+                <th width="140">First Name</th>
+                <th>Last Name</th>
+                <th width="20"></th>
+                <th width="20"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each this}}
+            <tr>
+                <td><a href="{{pathFor 'characterView' this}}">{{_id}}</a></td>
+                <td>{{firstname}}</td>
+                <td>{{lastname}}</td>
+                <td>
+                    <a href="{{pathFor 'characterUpdate' this}}"><i class="glyphicon glyphicon-edit"></i></a>
+                </td>
+                <td>
+                    <button class="delete" data-id="{{_id}}"><i class="glyphicon glyphicon-remove"></i></button>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</template>

@@ -9,10 +9,12 @@ jquery
 underscore
 accounts-base
 accounts-password
+accounts-ui
 iron:router
 meteorhacks:npm
 npm-container
 mrt:underscore-string-latest
-accounts-ui
 aldeed:collection2
 aldeed:autoform
+mrt:moment
+

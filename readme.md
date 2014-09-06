@@ -33,14 +33,14 @@ The router comes preconfigured with:
 - underscore
 - accounts-base
 - accounts-password
+- accounts-ui
 - iron:router
 - meteorhacks:npm
 - npm-container
 - mrt:underscore-string-latest
-- accounts-ui
 - aldeed:collection2
 - aldeed:autoform
-
+- mrt:moment
 
 ##Directory Structure
 This directory structure allows for clean, modular code:
@@ -67,7 +67,7 @@ server/                 # Server-only files
     lib/                # Server-side library files that get executed first
     methods/            # Meteor.methods definitions
     startup/            # On server startup
-tests/                  # Velocity test files, can be run with mocha(*)
+tests/                  # Tests
 packages.json           # Add desired NPM packages here, load with Meteor.npmRequire
 ```
 
@@ -93,6 +93,9 @@ You will want to read the instructions for the following packages:
 - Server console with https://github.com/gandev/meteor-server-console
 
 ##Helpful Resources
+- [Meteor Docs](http://docs.meteor.com/)
+- [Atmosphere Packages](http://atmospherejs.com/)
+- [Best learning resources for MeteorJS](https://www.yauh.de/best-learning-resources-for-meteorjs/)
 - [Discover Meteor](https://www.discovermeteor.com/)
 - [Meteor Cookbook](https://github.com/awatson1978/meteor-cookbook/blob/master/readme.md)
 - [Crater.io - Hacker News for Meteor](http://crater.io/)

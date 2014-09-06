@@ -1,4 +1,4 @@
-Template.characters.events({
+Template.characterIndex.events({
   'click .delete': function(e){
     var $btn = $(e.currentTarget);
     var id = $btn.data('id');

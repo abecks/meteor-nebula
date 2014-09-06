@@ -73,7 +73,12 @@ if(Meteor.isServer){
   });
 
   // Publish the collection
-  Meteor.publish('Character', function () {
+  Meteor.publish('Characters', function () {
     return app.collections.Character.find();
+  });
+
+  // Publish a single item
+  Meteor.publish('Character', function (id) {
+    return app.collections.Character.find(id);
   });
 }
