@@ -36,7 +36,6 @@ The router comes preconfigured with:
 - iron:router
 - meteorhacks:npm
 - npm-container
-- nemo64:bootstrap
 - mrt:underscore-string-latest
 - accounts-ui
 - aldeed:collection2
