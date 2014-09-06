@@ -40,7 +40,6 @@ minimongo@1.0.1
 mongo-livedata@1.0.3
 mrt:moment@2.6.0
 mrt:underscore-string-latest@2.3.3
-nemo64:bootstrap@3.2.0
 npm-bcrypt@0.7.7
 npm-container@1.0.0
 observe-sequence@1.0.1
