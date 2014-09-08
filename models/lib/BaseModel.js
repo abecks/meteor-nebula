@@ -28,10 +28,10 @@ app.models.BaseModel.prototype = {
     }
 
     for(attr in attrs){
-      this[ key ] = attrs[attr];
+      this[ attr ] = attrs[attr];
 
-      if(! _.contains(this._changed, key)) {
-        this._changed.push(key);
+      if(! _.contains(this._changed, attr)) {
+        this._changed.push(attr);
       }
     }
   },
@@ -44,7 +44,10 @@ app.models.BaseModel.prototype = {
     // Serialize all properties and inherited properties that are not
     // present in the BaseModel or the Object prototype
     for(var attr in this) {
-      if(! app.models.BaseModel.prototype.hasOwnProperty(attr) && ! Object.prototype.hasOwnProperty(attr)) {
+      if(! app.models.BaseModel.prototype.hasOwnProperty(attr)
+        && ! Object.prototype.hasOwnProperty(attr)
+        && typeof this[attr] !== 'function'
+      ) {
         json[ attr ] = this[ attr ];
       }
     }
