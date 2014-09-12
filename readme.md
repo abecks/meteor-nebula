@@ -36,11 +36,11 @@ The router comes preconfigured with:
 - accounts-ui
 - iron:router
 - meteorhacks:npm
-- npm-container
-- mrt:underscore-string-latest
 - aldeed:collection2
 - aldeed:autoform
+- mrt:underscore-string-latest
 - mrt:moment
+- mrt:numeral
 
 ##Directory Structure
 This directory structure allows for clean, modular code:
