@@ -1,0 +1,28 @@
+<template name="modelNameIndex">
+    <h1>upperModelName Collection</h1>
+    <br>
+    <a class="btn btn-success btn-lg float-right" href="{{pathFor 'modelNameCreate'}}">Add New upperModelName</a>
+    <br><br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th width="20"></th>
+                <th width="20"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each this}}
+            <tr>
+                <td><a href="{{pathFor 'modelNameView' this}}">{{_id}}</a></td>
+                <td>
+                    <a href="{{pathFor 'modelNameUpdate' this}}"><i class="glyphicon glyphicon-edit"></i></a>
+                </td>
+                <td>
+                    <button class="delete" data-id="{{_id}}"><i class="glyphicon glyphicon-remove"></i></button>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</template>

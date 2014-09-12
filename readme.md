@@ -85,6 +85,28 @@ You will want to read the instructions for the following packages:
 - [Collection2 - Attaching a Schema to a Collection](https://github.com/EventedMind/iron-router#basics)
 - [Using NPM Modules in your app](http://docs.meteor.com/)
 
+##Models
+Nebula comes with a basic ORM called "BaseModel". It's extremely basic and may
+suit your needs. It has the following methods:
+```
+set     - Set a/several properties on the model. Changes are remembered for efficient saving
+toJSON  - Converts the model to a JSON object
+save    - Save all changed properties since the last save
+saveAll - Save all the properties of the model, regardless of tracked changes
+```
+
+##Boilerplate Generator
+Use our generator to create views, routes, models and full CRUD skeletons quickly.
+Run the generator from the project root with ```node nebula.js```
+
+```
+create:view - client/views folder with template and JS skeletons
+create:crud - client/views folder with CRUD for a model
+create:route - client/routes javascript file
+create:model - Model skeleton javascript file
+create:collection - Collection with model, schema, publish and subscribe
+```
+
 
 ##Recommended Packages
 - Pagination with https://github.com/alethes/meteor-pages
