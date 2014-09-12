@@ -124,8 +124,8 @@ create:collection - Collection with model, schema, publish and subscribe
 
 
 ##Todo
-- Tests with https://github.com/meteor-velocity/velocity when they update to 0.9
-- Boilerplate code generator
-- User roles
-- Pagination example
-- Deployment script recommendations
+[ ] Tests with https://github.com/meteor-velocity/velocity when they update to 0.9
+[x] Boilerplate code generator
+[ ] User roles
+[ ] Pagination example
+[ ] Deployment script recommendations
