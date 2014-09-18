@@ -3,9 +3,9 @@ Router.map(function () {
   // Index
   this.route('modelNameIndex', {
     path: '/modelName',
-    title: 'upperModelNames Collection',
+    title: 'upperModelName Collection',
     waitOn: function () {
-      return Meteor.subscribe('upperModelNames');
+      return Meteor.subscribe('upperModelName');
     },
     data: function () {
       return app.collections.upperModelName.find();
