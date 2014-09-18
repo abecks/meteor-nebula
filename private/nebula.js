@@ -8,10 +8,10 @@ var fs = require('fs'),
 Directories
  */
 var Dirs = {
-  views: 'client/views',
-  routes: 'client/routes',
-  models: 'models',
-  templates: 'private/templates'
+  views: '../client/views',
+  routes: '../client/routes',
+  models: '../models',
+  templates: 'templates'
 }
 
 /*

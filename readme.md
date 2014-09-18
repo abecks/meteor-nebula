@@ -97,7 +97,7 @@ saveAll - Save all the properties of the model, regardless of tracked changes
 
 ##Boilerplate Generator
 Use our generator to create views, routes, models and full CRUD skeletons quickly.
-Run the generator from the project root with ```node nebula.js```
+Run the generator from the ```private``` folder with ```node nebula.js```
 
 ```
 create:view - client/views folder with template and JS skeletons
