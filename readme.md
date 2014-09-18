@@ -60,7 +60,7 @@ client/                 # Client folder
         common/         # General purpose templates (header, footer, etc.)
 models/                 # Model files, with Collection, Schema and publish definitions
     lib/                # Models loaded first
-private/                # Private files
+private/                # Files inaccessible to client and not automatically loaded by server
 public/                 # Public files
 server/                 # Server-only files
     fixtures/           # Database fixtures
