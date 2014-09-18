@@ -2,7 +2,7 @@ Router.map(function () {
 
   // Index
   this.route('modelNameIndex', {
-    path: '/modelNames',
+    path: '/modelName',
     title: 'upperModelNames Collection',
     waitOn: function () {
       return Meteor.subscribe('upperModelNames');
@@ -14,13 +14,13 @@ Router.map(function () {
 
   // Create
   this.route('modelNameCreate', {
-    path: '/modelNames/create',
+    path: '/modelName/create',
     title: 'Add New upperModelName'
   });
 
   // Update
   this.route('modelNameUpdate', {
-    path: '/modelNames/edit/:_id',
+    path: '/modelName/edit/:_id',
     title: 'Edit upperModelName',
     waitOn: function () {
       return Meteor.subscribe('upperModelName', this.params._id);
@@ -32,7 +32,7 @@ Router.map(function () {
 
   // View
   this.route('modelNameView', {
-    path: '/modelNames/:_id',
+    path: '/modelName/:_id',
     title: 'View upperModelName',
     waitOn: function () {
       return Meteor.subscribe('upperModelName', this.params._id);
