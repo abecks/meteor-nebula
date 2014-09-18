@@ -45,7 +45,7 @@ if(Meteor.isServer){
   });
 
   // Publish the collection
-  Meteor.publish('ModelName', function () {
+  Meteor.publish('ModelNames', function () {
     return app.collections.ModelName.find();
   });
 

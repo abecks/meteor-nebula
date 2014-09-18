@@ -5,7 +5,7 @@ Router.map(function () {
     path: '/modelName',
     title: 'upperModelName Collection',
     waitOn: function () {
-      return Meteor.subscribe('upperModelName');
+      return Meteor.subscribe('upperModelNames');
     },
     data: function () {
       return app.collections.upperModelName.find();
