@@ -1,17 +1,16 @@
 /*
-Base model for our simple model structure
-*/
+ Base model for our simple model structure
+ */
 "use strict";
 
-app.models.BaseModel = function() {};
+app.models.BaseModel = function() {
+  // Track changes for efficient saving
+  this._changed = [];
+  // The collection where the model is saved
+  this.collection = null;
+};
 
 app.models.BaseModel.prototype = {
-
-  // Track changes for efficient saving
-  _changed: [],
-
-  // The collection where the model is saved
-  collection: null,
 
   // Sets a property within the object with (key, value) or multiple
   // properties with ({ key: value })
@@ -59,7 +58,10 @@ app.models.BaseModel.prototype = {
   // Not for public use.
   _save: function (json, keepChanged) {
     if(! keepChanged) {
-      this._changed = [];
+      this._changed.length = 0;
+    }
+    if(_.isEmpty(json)){
+      return;
     }
 
     var collection = app.collections[this.collection];
@@ -68,7 +70,7 @@ app.models.BaseModel.prototype = {
     }
 
     delete json._id;
-    if(this._id === null) {
+    if(!this._id) {
       this._id = collection.insert(json);
     } else {
       collection.update({ _id: this._id }, { $set: json });
