@@ -34,8 +34,9 @@ Router.onAfterAction(function() {
 // Require users to be logged in before running the route.
 // Simply put { authenticated: true } in the options for the route's
 // you want to secure.
-Router.onBeforeAction( function(pause){
+Router.onBeforeAction( function(){
   if(! this.route.options.authenticated){
+    this.next();
     return;
   }
 
@@ -47,13 +48,13 @@ Router.onBeforeAction( function(pause){
   // Wait for the user's data to sync
   if(Meteor.loggingIn()) {
     this.render('loading');
-    pause();
   }
   // Check if the user is authenticated
   else if(! Meteor.user()) {
     Session.set('loginRedirect', this.route.name);
     Router.go('login');
-    pause();
+  }else{
+    this.next();
   }
 });
 
@@ -62,5 +63,6 @@ Router.onBeforeAction( function(pause){
 function clearModals() {
   $('.modal.in').remove();
   $('.modal-backdrop').remove();
+  this.next();
 }
 Router.onBeforeAction(clearModals);
