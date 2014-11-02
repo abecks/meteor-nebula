@@ -28,6 +28,8 @@ Router.onAfterAction(function() {
     title = _(this.route.name).titleize();
   }
   document.title = title + ' - ' + app.name;
+
+  this.next();
 });
 
 
