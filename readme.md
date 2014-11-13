@@ -3,7 +3,7 @@
 ##Where stars are born
 Nebula is a Meteor boilerplate designed to help you get started making Meteor web apps quickly and easily.
 
-Shout out to two other excellent boilerplates: [meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate) and [Void](https://github.com/SachaG/Void).
+Shout out to two other excellent boilerplates: [meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate), [Void](https://github.com/SachaG/Void), and [Meteoris](https://github.com/radiegtya/meteoris).
 
 Preview the boilerplate here: http://nebula-boilerplate.meteor.com/
 
@@ -113,6 +113,7 @@ create:collection - Collection with model, schema, publish and subscribe
 - Google Analytics with https://github.com/reywood/meteor-iron-router-ga
 - Testing with https://github.com/meteor-velocity/velocity
 - Server console with https://github.com/gandev/meteor-server-console
+- SEO with https://github.com/DerMambo/ms-seo and http://www.meteorpedia.com/read/spiderable/ also see https://gentlenode.com/journal/meteor-12-the-complete-guide-to-seo/20
 
 ##Helpful Resources
 - [Meteor Docs](http://docs.meteor.com/)
@@ -121,10 +122,11 @@ create:collection - Collection with model, schema, publish and subscribe
 - [Discover Meteor](https://www.discovermeteor.com/)
 - [Meteor Cookbook](https://github.com/awatson1978/meteor-cookbook/blob/master/readme.md)
 - [Crater.io - Hacker News for Meteor](http://crater.io/)
+- [Meteorpedia](http://www.meteorpedia.com/)
 
 
 ##Todo
-- [ ] Tests with https://github.com/meteor-velocity/velocity when they update to 0.9
+- [ ] Tests with Velocity and Mocha
 - [x] Boilerplate code generator
 - [ ] User roles
 - [ ] Pagination example
