@@ -1,7 +1,7 @@
 "use strict";
 
 // Create collection
-app.collections.Character = new Meteor.Collection("Character", {
+app.collections.Character = new Mongo.Collection("Character", {
   transform: function(document){
     return new app.models.Character(document);
   }

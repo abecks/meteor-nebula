@@ -113,6 +113,7 @@
       "process": false,
       "WebApp": false,
       "WebAppInternals": false,
+      "Mongo": false,
 
       // globals useful when creating Meteor packages
       "Package": false,

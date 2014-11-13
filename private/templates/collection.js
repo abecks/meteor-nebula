@@ -1,7 +1,7 @@
 "use strict";
 
 // Create collection
-app.collections.ModelName = new Meteor.Collection("ModelName", {
+app.collections.ModelName = new Mongo.Collection("ModelName", {
   transform: function(document){
     return new app.models.ModelName(document);
   }
