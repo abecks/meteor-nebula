@@ -53,7 +53,6 @@ client/                 # Client folder
     less                # LESS files    
     lib/                # Client-side library files that get executed first
     modules/            # Re-usable components and partials
-    routes/             # Iron-Router routes
     startup/            # Client-side startup code
     subscriptions/      # Global subscriptions for the client
     views/              # Views/templates for your application
@@ -62,6 +61,7 @@ models/                 # Model files, with Collection, Schema and publish defin
     lib/                # Models loaded first
 private/                # Files inaccessible to client and not automatically loaded by server
 public/                 # Public files
+routes/                 # Iron-Router routes
 server/                 # Server-only files
     fixtures/           # Database fixtures
     lib/                # Server-side library files that get executed first
