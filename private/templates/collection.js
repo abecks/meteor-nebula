@@ -25,6 +25,11 @@ app.models.ModelName = function(properties){
 };
 app.models.BaseModel.extend(app.models.ModelName);
 
+// Prototype functions
+_.extend(app.models.ModelName.prototype, {
+
+});
+
 
 /**
  * Server specific instructions

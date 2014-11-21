@@ -127,7 +127,6 @@ create:collection - Collection with model, schema, publish and subscribe
 
 ##Todo
 - [ ] Tests with Velocity and Mocha
-- [x] Boilerplate code generator
 - [ ] User roles
 - [ ] Pagination example
 - [ ] Deployment script recommendations

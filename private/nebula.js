@@ -9,7 +9,7 @@ Directories
  */
 var Dirs = {
   views: '../client/views',
-  routes: '../client/routes',
+  routes: '../routes',
   models: '../models',
   templates: 'templates'
 }
