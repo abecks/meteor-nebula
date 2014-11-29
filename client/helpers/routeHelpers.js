@@ -9,12 +9,12 @@ var routeUtils = {
 
   testRoutes: function(routeNames) {
     var reg = this.regex(routeNames);
-    return this.context() && reg.test(this.context().route.name);
+    return this.context() && reg.test(this.context().route.getName());
   },
 
   testPaths: function(paths) {
     var reg = this.regex(paths);
-    return this.context() && reg.test(this.context().path);
+    return this.context() && reg.test(this.context().route.path());
   }
 };
 
