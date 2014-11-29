@@ -1,4 +1,4 @@
 // Exposes the app global variable as a template helper
-UI.registerHelper('app', function(){
+Template.registerHelper('app', function(){
   return app;
 })
