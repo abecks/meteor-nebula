@@ -7,8 +7,7 @@
         <thead>
             <tr>
                 <th width="200">ID</th>
-                <th width="140">First Name</th>
-                <th>Last Name</th>
+                <th width="140">Name</th>
                 <th width="20"></th>
                 <th width="20"></th>
             </tr>
@@ -17,8 +16,7 @@
             {{#each this}}
             <tr>
                 <td><a href="{{pathFor 'characterView' this}}">{{_id}}</a></td>
-                <td>{{firstname}}</td>
-                <td>{{lastname}}</td>
+                <td>{{name}}</td>
                 <td>
                     <a href="{{pathFor 'characterUpdate' this}}"><i class="glyphicon glyphicon-edit"></i></a>
                 </td>

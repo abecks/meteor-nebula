@@ -5,3 +5,11 @@ Template.characterIndex.events({
     app.collections.Character.remove(id);
   }
 });
+
+Template.characterIndex.helpers({
+
+  name: function(){
+    return this.getName();
+  }
+
+});

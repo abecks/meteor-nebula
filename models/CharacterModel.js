@@ -3,7 +3,7 @@
 // Create collection
 app.collections.Character = new Mongo.Collection("Character", {
   transform: function(document){
-    return new app.models.Character(document);
+    return app.models.Character(document);
   }
 });
 
@@ -25,33 +25,19 @@ app.schema.Character = new SimpleSchema({
 app.collections.Character.attachSchema(app.schema.Character);
 
 // An example model
-app.models.Character = function(properties){
-  // Model properties
-  this.firstname = null;
-  this.lastname = null;
-  this.collection = 'Character';
+app.models.Character =
+  stampit()
+    .enclose(function(){
+      // Init or constructor function
+    })
+    .methods({
 
-  // You can define other variables that are not in the schema.
-  // Useful for helper variables and functions.
-  // todo: make toJSON ignore any values that are not in the schema
-  this.someVar = true;
+      // prototype functions
+      getName: function(){
+        return this.firstname + ' ' + this.lastname;
+      }
 
-  // Massive assignment
-  _.extend(this, properties);
-};
-app.models.BaseModel.extend(app.models.Character);
-
-
-// An example of an inherited model
-app.models.InheritanceCharacter = function(properties){
-  // Model properties
-  this.anotherVar = true;
-
-  // Massive assignment
-  _.extend(this, properties);
-};
-app.models.Character.extend( app.models.InheritanceCharacter );
-
+    });
 
 
 /**
